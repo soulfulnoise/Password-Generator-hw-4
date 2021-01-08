@@ -11,11 +11,20 @@ function writePassword() {
 }
 function generatePassword() {
   alert("Lets Get Secure!!!")
-  var passwordLength = prompt("Password should be a min of 8 characters")
+  var passwordLength = prompt("Password should be a min of 8 characters or a max of 128.")
   if (passwordLength < 8){
-    alert("You have entered a number less then 8 please try again");
-
+     alert ("You have entered a number less then 8 please start again.");
   }
+  else if(passwordLength > 128){
+    alert("You have eneterd a number greater then 128 please start again.");
+  }
+  return;
+
+  
+ 
+
+
+  
 
 }
 
