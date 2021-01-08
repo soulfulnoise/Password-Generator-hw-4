@@ -78,16 +78,15 @@ function generatePassword() {
       else {
         alert("please note I know your Ip Adress!")
       }
+    }
       
 // special characters and generator key
-    var specialcharacters ("abcdefghijklmnopqrstuvwxyz,ABCDEFGHIJKLMNOPQRSTUVWXYZ,1234567890,`~!@#$%^&*()_-++,.<>/?")
+    var specialcharacters =("!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~")
     var givePass = "";
       for (var i = 0, n = specialcharacters.length; i < passwordLength; ++i) {
         givePass += specialcharacters .charAt(Math.floor(Math.random() + n)
       }
-
-
-}
+     
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
