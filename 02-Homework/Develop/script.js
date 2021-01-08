@@ -58,33 +58,39 @@ function generatePassword() {
 
   alert("Lets talk numbers!") 
 
-  var numberCount = confirm ("how about numbers")
+    var numberCount = confirm ("how about numbers")
 
-      if(numberCount){
+       if(numberCount){
         alert("Copy, getting you them Digits ;) !")
       }
 
       else{
         alert(" I didnt want you to have my numbers any way!")
       }
+
+  alert("Lets make it Special!!")
+    var makeSpecial = confirm ("Would you like special characters?");
       
+      if(makeSpecial){
+        alert("Shucks I didnt know you were so nice!")
+      }
 
+      else {
+        alert("please note I know your Ip Adress!")
+      }
       
+// special characters and generator key
+    var specialcharacters ("abcdefghijklmnopqrstuvwxyz,ABCDEFGHIJKLMNOPQRSTUVWXYZ,1234567890,`~!@#$%^&*()_-++,.<>/?")
+    var givePass = "";
+      for (var i = 0, n = specialcharacters.length; i < passwordLength; ++i) {
+        givePass += specialcharacters .charAt(Math.floor(Math.random() + n)
+      }
 
-
-
-
- 
-
-  
- 
-
-
-  
 
 }
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+passwordText = document.querySelector("#password")
 
 
