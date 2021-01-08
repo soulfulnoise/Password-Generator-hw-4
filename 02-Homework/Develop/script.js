@@ -12,13 +12,69 @@ function writePassword() {
 function generatePassword() {
   alert("Lets Get Secure!!!")
   var passwordLength = prompt("Password should be a min of 8 characters or a max of 128.")
+  
+  if(passwordLength > 8 ) {
+    alert("You disered character count has been recorded!")
+  }
+
+  else
+  if (passwordLength < 128){
+    alert("You disered character count has been recorded!")
+  }
+
+ else
   if (passwordLength < 8){
      alert ("You have entered a number less then 8 please start again.");
+     restart (passwordLength = prompt("Password should be a min of 8 characters or a max of 128.") );
+
   }
-  else if(passwordLength > 128){
+  else 
+  if (passwordLength > 128){
     alert("You have eneterd a number greater then 128 please start again.");
+    restart (passwordLength = prompt("Password should be a min of 8 characters or a max of 128.") )
   }
-  return;
+
+  alert("Time to add letters")
+
+    var giveLowerCase = confirm ("How bout lower case?");
+
+      if (giveLowerCase) {
+        alert("inputting lowercase letters.")
+      }
+
+      else {
+        alert(" Dont have your glasses handy? all good!")
+      }
+
+    var giveUpperCase = confirm ("Going big or go home right?");
+
+      if (giveUpperCase) {
+        alert("inputting Uppercase letters.");
+      }
+
+      else {
+        alert("Guess not.");
+      }
+
+  alert("Lets talk numbers!") 
+
+  var numberCount = confirm ("how about numbers")
+
+      if(numberCount){
+        alert("Copy, getting you them Digits ;) !")
+      }
+
+      else{
+        alert(" I didnt want you to have my numbers any way!")
+      }
+      
+
+      
+
+
+
+
+ 
 
   
  
